@@ -1,95 +1,84 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DDTank - Cập nhật 18.01 - Đại chiến thương cổ xuất thế</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="DDTank - Cập nhật 18.01 - Đại chiến thương cổ xuất thế"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://ddtank.garena.vn/"/>
+    <meta property="og:description"
+          content="DDTank - Cập nhật 18.01 - Đại chiến thương cổ xuất thế"/>
+    <meta property="og:site_name" content="DDTank"/>
+    <meta property="og:image" content="https://cdn.vn.garenanow.com/web/ddt/update.18.01/images/facebook-share.jpg"/>
+    <link rel="shortcut icon" href="https://cdngarenanow-a.akamaihd.net/webmain/static/resource/osite/favicon.ico"/>
+    <link rel="shortcut icon" href="https://cdn.vn.garenanow.com/web/ddt/wp-content/themes/ddtank/img/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="keywords" content="DDTank,DDTank - Cập nhật 18.01 - Đại chiến thương cổ xuất thế">
+    <meta name="description" content="DDTank - Cập nhật 18.01 - Đại chiến thương cổ xuất thế">
 
-        <title>Laravel</title>
+    <!-- Latest compiled and minified CSS -->
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+    <link rel="stylesheet" href="{{ asset('source/styles/styles.css') }}">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-            .full-height {
-                height: 100vh;
-            }
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+    <!-- Latest compiled JavaScript -->
 
-            .position-ref {
-                position: relative;
-            }
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
+</head>
+<body>
+<div class="">
+    <div class="container-fluid">
+        <div class="nav top-nav">
+            <div class="dropdown top-left-menu">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+            </div>
+            <a href="#" class="logo">
+                <span class="wrapper">
+                   <img src="https://gts.garenanow.com/static/media/logo.b5ab4e3e.png" alt=""> GOP Ticket
+                </span>
+            </a>
+            <div class="right-info float-right">
+                <div class="wrapper">
+                @if (Route::has('login'))
+                    <div class="top-right links">
+                        @auth
+                            <a href="{{ url('/home') }}"><button type="button" class="btn btn-danger"><i class="fas fa-sign-in-alt"></i> Home</button></a>
+                        @else
+                                <a href="./auth/google"><button type="button" class="btn btn-danger"><i class="fas fa-sign-in-alt"></i> Login</button></a>
+                        @endauth
+                    </div>
+                @endif
                 </div>
             </div>
         </div>
-    </body>
+        <div class="main-content">
+            <div class="center-main-content">
+                <div class="about">Thong tin huong dan o day</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="{{ asset('source/scripts/app.js') }}"></script>
+</body>
+
 </html>
