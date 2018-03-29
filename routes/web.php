@@ -19,5 +19,5 @@ Route::get('/auth/google', 'SocialAuthController@redirectToProvider');
 Route::get('/auth/google/callback', 'SocialAuthController@handleProviderCallback');
 Auth::routes();
 Route::group(['middleware' => ['socialauth']], function () {
-    Route::resource('tickets', 'TicketsController', ['except' => ['edit', 'destroy']]);
+    Route::resource('tickets', 'TicketsController', ['except' => ['destroy']]);
 });

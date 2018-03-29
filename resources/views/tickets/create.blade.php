@@ -44,8 +44,8 @@
                             <div class="form-group">
                                 <label class="bold subject-title">Duration</label>
                                 <label class="bold">Day*</label>
-                                <select class="form-control" id="sel1">
-                                    <option>1</option>
+                                <select name="duration" class="form-control" id="sel1">
+                                    <option value="1">1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
@@ -56,102 +56,100 @@
                                 <div class="instruction">Name Prefix will be combined with Name Postfix to generate actualy
                                     DNS Name Record
                                 </div>
-                                <input type="text" class="form-control" id="namePrefix">
+                                <input name="api_source" type="text" class="form-control" id="namePrefix">
                             </div>
                             <div class="form-group">
                                 <label class="bold">CCU*</label>
                                 <div class="instruction">Name Prefix will be combined with Name Postfix to generate actualy
                                     DNS Name Record
                                 </div>
-                                <input type="text" class="form-control" id="namePrefix">
+                                <input name="ccu" type="text" class="form-control" id="namePrefix">
                             </div>
                             <div class="form-group">
                                 <label class="bold">Mockup*</label>
                                 <div class="instruction">Name Prefix will be combined with Name Postfix to generate actualy
                                     DNS Name Record
                                 </div>
-                                <input type="text" class="form-control" id="namePrefix">
+                                <input name="mockups" type="text" class="form-control" id="namePrefix">
                             </div>
                             <div class="form-group">
                                 <label class="bold">Fb_title*</label>
                                 <div class="instruction">Name Prefix will be combined with Name Postfix to generate actualy
                                     DNS Name Record
                                 </div>
-                                <input type="text" class="form-control" id="namePrefix">
+                                <input name="fb_title" type="text" class="form-control" id="namePrefix">
                             </div>
                             <div class="form-group">
                                 <label class="bold">Fb_description*</label>
                                 <div class="instruction">Name Prefix will be combined with Name Postfix to generate actualy
                                     DNS Name Record
                                 </div>
-                                <input type="text" class="form-control" id="namePrefix">
+                                <input name="fb_description" type="text" class="form-control" id="namePrefix">
                             </div>
                             <div class="form-group">
                                 <label class="bold">FB_image*</label>
                                 <div class="instruction">Name Prefix will be combined with Name Postfix to generate actualy
                                     DNS Name Record
                                 </div>
-                                <input type="text" class="form-control" id="namePrefix">
+                                <input name="fb_image" type="text" class="form-control" id="namePrefix">
                             </div>
                             <div class="form-group">
                                 <label class="bold">exported_data*</label>
                                 <div class="instruction">Name Prefix will be combined with Name Postfix to generate actualy
                                     DNS Name Record
                                 </div>
-                                <input type="text" class="form-control" id="namePrefix">
+                                <input name="data_output" type="text" class="form-control" id="namePrefix">
                             </div>
                             <div class="form-group">
                                 <label class="bold">CC*</label>
                                 <div class="instruction">Name Prefix will be combined with Name Postfix to generate actualy
                                     DNS Name Record
                                 </div>
-                                <input type="text" class="form-control" id="namePrefix">
+                                <input name="cc" type="text" class="form-control" id="namePrefix">
                             </div>
                             <div class="form-group">
                                 <label class="bold">Design Link*</label>
                                 <div class="instruction">State the domain such as .garena.com, .shopee.vn</div>
-                                <input type="text" class="form-control" id="namePostfix">
+                                <input name="design_link" type="text" class="form-control" id="namePostfix">
                             </div>
                             <div class="form-group">
                                 <label class="bold">Domain*</label>
                                 <div class="instruction">State the domain such as .garena.com, .shopee.vn</div>
-                                <input type="text" class="form-control" id="namePostfix">
+                                <input name="domain" type="text" class="form-control" id="namePostfix">
                             </div>
                             <div class="form-group">
                                 <label class="bold">Priority*</label>
-                                <select class="form-control" id="types">
-                                    <option>Low</option>
+                                <select name="priority" class="form-control" id="types">
+                                    <option value="1">Low</option>
                                     <option>Medium</option>
                                     <option>High</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label class="bold">PO*</label>
-                                <select class="form-control" id="types">
-                                    <option>dinhphuc.luu@ved.com.vn</option>
-                                    <option>dinhphuc.luu@ved.com.vn</option>
-                                    <option>dinhphuc.luu@ved.com.vn</option>
+                                <select name="owner" class="form-control" id="types">
+                                    <option value="1">dinhphuc.luu@ved.com.vn</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label class="bold">Dealine*</label>
-                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-date-input">
+                                <input name="deadline" class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-date-input">
                             </div>
                             <div class="form-group">
                                 <label class="bold">Design Deadline*</label>
-                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-date-input">
+                                <input name="design_deadline" class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-date-input">
                             </div>
                             <div class="form-group">
                                 <label class="bold">Logic*</label>
                                 <div class="instruction">IPv4 address. Enter multiple addresses on separate lines.</div>
-                                <textarea style="width: 100%" name="" id="" cols="15" rows="5" placeholder="">
+                                <textarea name="logic" style="width: 100%" name="" id="" cols="15" rows="5" placeholder="">
 
                             </textarea>
                             </div>
                             <div class="form-group">
                                 <label class="bold">GA*</label>
                                 <div class="instruction">IPv4 address. Enter multiple addresses on separate lines.</div>
-                                <textarea style="width: 100%" name="" id="" cols="15" rows="5" placeholder="">
+                                <textarea name="ga" style="width: 100%" name="" id="" cols="15" rows="5" placeholder="">
 
                             </textarea>
                             </div>
