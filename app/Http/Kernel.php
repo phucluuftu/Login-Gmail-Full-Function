@@ -62,5 +62,6 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'socialauth'=>\App\Http\Middleware\socialauth::class,
+        'CheckTeam' => \App\Http\Middleware\CheckTeam::class,
     ];
 }
