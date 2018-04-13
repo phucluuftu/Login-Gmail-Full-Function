@@ -20,4 +20,8 @@ Route::get('/auth/google/callback', 'SocialAuthController@handleProviderCallback
 Auth::routes();
 Route::group(['middleware' => ['socialauth']], function () {
     Route::resource('tickets', 'TicketsController', ['except' => ['destroy']]);
+    Route::post('tickets/{ticket}/comments', 'CommentController@store')->name('comments.store');
+    Route::post('tickets/{ticket}/test_cases', 'TestCaseController@store')->name('test_cases.store');
+    Route::patch('tickets/{ticket}/test_cases', 'TestCaseController@update')->name('test_cases.update');
+    Route::post('tickets/{ticket}/rating', 'RatingController@store')->name('rating.store');
 });

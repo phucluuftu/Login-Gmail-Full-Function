@@ -7,6 +7,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Socialite, Auth, Redirect, Session, URL;
 use App\User;
+use Illuminate\Support\Facades\DB;
 
 class SocialAuthController extends Controller
 {
@@ -49,6 +50,9 @@ class SocialAuthController extends Controller
         if($user){
 
             Auth::login($user);
+            DB::table('users')
+                ->where('id', $user->id)
+                ->update(['avatar' => $userSocial->avatar]);
 
             return redirect()->action('HomeController@index');
 
@@ -57,6 +61,16 @@ class SocialAuthController extends Controller
             return Redirect::to('/');
 
         }
+
+    }
+
+    public function get_avatar()
+
+    {
+
+        $userSocial = Socialite::driver('google')->user();
+
+        return $userSocial;
 
     }
 

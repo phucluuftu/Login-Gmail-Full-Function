@@ -13,11 +13,11 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         DB::table('users')->insert(
-//            [
-//                'name' => 'Phúc Lưu Đình',
-//                'email' => 'dinhphuc.luu@ved.com.vn',
-//                'team' => '1',
-//            ],
+            [
+                'name' => 'Phúc Lưu Đình',
+                'email' => 'dinhphuc.luu@ved.com.vn',
+                'team' => '1',
+            ],
             [
                 'name' => 'Phuc Luu',
                 'email' => 'phucluuftu@gmail.com',
